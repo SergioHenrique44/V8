@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="27dp">
+        
+        <ImageView
+            android:id="@+id/imgLivro"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:src="@drawable/v82"/>
+
+        <TextView
+            android:id="@+id/placa_carro"
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imgLivro"
+            android:gravity="bottom"
+            android:text="Placa"
+            android:textColor="#000"
+            android:textSize="17dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/modelo_carro"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imgLivro"
+            android:gravity="bottom"
+            android:text="Modelo"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/cor_carro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imgLivro"
+            android:layout_alignBottom="@id/imgLivro"
+            android:gravity="bottom"
+            android:text="Cor"
+            android:textColor="#000" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="27dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        android:gravity="right">
+
+        <Button
+            android:id="@+id/btnEditar"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:background="@drawable/botao_roxo"
+            android:fontFamily="sans-serif"
+            android:text="Editar"
+            android:textAllCaps="false"
+            android:textColor="#FFFF"
+            android:textSize="15dp"/>
+
+        <Button
+            android:id="@+id/btnExcluir"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/botao_branco"
+            android:fontFamily="sans-serif"
+            android:text="Excluir"
+            android:textAllCaps="false"
+            android:textColor="#885CBB"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+
+</RelativeLayout>
